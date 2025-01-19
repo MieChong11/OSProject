@@ -1,8 +1,8 @@
 # OSProject Running Containers for Application Development
 
-Group Name: Group X. 
+Group Name: Group X
 
-Section: 7. 
+Section: 7
 
 Team Mates:
 1. __Fill name__ and __matric no__
