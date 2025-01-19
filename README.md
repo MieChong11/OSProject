@@ -5,9 +5,10 @@ Group Name: Group X
 Section: 7
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+1. AMIRUL WAFI BIN ABDUL HAMID (2319281)
+2. NUR SYAHIDA BINTI AYOB (2311722)
+3. MUHAMMAD NAJIB BIN MOHD AZIZ (2317097)
+4. NURHUSNA SHAMIMIE BINTI MANAZIL (2317280)
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
