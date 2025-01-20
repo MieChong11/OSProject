@@ -2,7 +2,7 @@
 
 Group Name: Group X
 
-Section: 7
+Section: 7 
 
 Team Mates:
 1. AMIRUL WAFI BIN ABDUL HAMID (2319281)
