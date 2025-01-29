@@ -342,7 +342,12 @@ Linux codespaces-949887 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33
 22.04.01 Ubuntu, 64-bit architecture
 
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
-**ls** is used to list the files and directories in a directory, while **ls -asl** is used to show the hidden files, disk usage, and detailed file information.
+-**ls** is used to list the files and directories in a directory, while **ls -asl** is used to show the hidden files, disk usage, and detailed file information.
+•	ls: Lists files and directories in the current directory.
+•	ls -asl: Adds the following details:
+•	a: Shows all files, including hidden ones.
+•	s: Displays the allocated disk space of each file.
+•	l: Lists detailed information (e.g., permissions, ownership, size, modification time).
 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)***
 2560 4K pages
@@ -412,10 +417,10 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)***
-The files in the container are not persistent because containers are designed to be ephemeral, which means they can be stopped, started, and deleted without retaining data beyond the container's lifecycle.
+The files in the container are not persistent by default because containers are designed to be ephemeral, which means they can be stopped, started, and deleted without retaining data beyond the container's lifecycle. Persistence can be achieved by using volumes or bind mounts, which store data outside the container in the host's file system or a dedicated storage solution.
 
 2. Can we run two, or three instances of debian linux? . ***(1 mark)***
-Yes, we can run many instances of debian linux.
+Yes, we can run multiple instances of Debian Linux simultaneously. Containers are isolated and lightweight, allowing you to start multiple containers with the same or different configurations of Debian Linux. Each container runs independently, sharing the host kernel, but they can have distinct resources, such as network ports or storage volumes.
 
 ## Running your own container with persistent storage
 
