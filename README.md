@@ -678,8 +678,16 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** The output of step 5 is : 
+{
+  "id": 1,
+  "name": "example1",
+  "value": "value1"
+}
+Error occurs because the Node.js container cannot access the MySQL container. This is due to the fact that the two containers are running on different Docker networks (nodejsnet for the Node.js container and mysqlnet for the MySQL container). Containers on separate networks cannot communicate directly with each other unless explicitly connected.
+2. Show the instruction needed to make this work. ***(1 mark)*** Bridge the networks: Connect the nodejs-container to the mysqlnet network so it can communicate with the MySQL container.
+
+docker network connect mysqlnet nodejs-container.
 
 
 
