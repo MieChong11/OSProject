@@ -514,7 +514,7 @@ bluenet: 172.18.0.1 , rednet: 172.19.0.1
 c1: 172.18.0.2 , c2: 172.19.0.2
 
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
-c1 unable to ping c2. The output shows that **ping: bad address 'c2'**
+c1 unable to ping c2. The output shows **ping: bad address 'c2'**
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -526,8 +526,16 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)***
+c1 is now able to ping p2.
+Output:
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.135 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.088 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.079 ms
+
+2. What is different from the previous ping in the section above? ***(1 mark)***
+There is no bridgenet in the previous section. Bridgenet is required in order to ping from c1 to c2.
 
 ## Intermediate Level (10 marks bonus)
 
